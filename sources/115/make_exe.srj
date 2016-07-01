@@ -1,0 +1,20 @@
+HA$PBExportHeader$make_exe.srj
+EXE:libexport.exe,,0,1,1
+CMP:0,0,0,2,0,0,0
+COM:Seki
+DES:Library objects exporter
+CPY:
+PRD:Library Export
+PVS:1.0.0.1
+PVN:1,0,0,1
+FVS:1.0.0.1
+FVN:1,0,0,1
+MAN:0,asInvoker,0
+PBD:libexport.pbl,,0
+OBJ:c:\dev\pb\libexport\libexport.pbl,dw_objects,d
+OBJ:c:\dev\pb\libexport\libexport.pbl,debug_message,f
+OBJ:c:\dev\pb\libexport\libexport.pbl,getfileopenname,f
+OBJ:C:\dev\pb\libexport\libexport.pbl,libexport,a
+OBJ:c:\dev\pb\libexport\libexport.pbl,getfolder,f
+OBJ:c:\dev\pb\libexport\libexport.pbl,w_export,w
+OBJ:c:\dev\pb\libexport\libexport.pbl,libexport,a

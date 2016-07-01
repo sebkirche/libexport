@@ -1,0 +1,23 @@
+HA$PBExportHeader$getfolder.srf
+global type getfolder from function_object
+end type
+
+forward prototypes
+global function string getfolder (string as_prompt)
+end prototypes
+
+global function string getfolder (string as_prompt);
+string ls_current, ls_dir = "", ls_selected
+int li_ret
+
+ls_current = GetCurrentDirectory()
+li_ret = GetFolder(as_prompt, ls_selected)
+if 1 = li_ret then
+	ls_dir = ls_selected
+end if
+ChangeDirectory(ls_current)
+
+return ls_dir
+
+end function
+

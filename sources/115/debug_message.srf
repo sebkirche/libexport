@@ -1,0 +1,16 @@
+HA$PBExportHeader$debug_message.srf
+global type debug_message from function_object
+end type
+
+forward prototypes
+global subroutine debug_message (string as_title, string as_msg)
+end prototypes
+
+global subroutine debug_message (string as_title, string as_msg);
+string ls_tmp
+
+ls_tmp = "["+ as_title + "]~t" + as_msg
+OutputDebugString( ls_tmp )
+
+end subroutine
+

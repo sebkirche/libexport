@@ -1,0 +1,13 @@
+Save Format v3.0(19990112)
+@begin Libraries
+ "libexport.pbl" "";
+@end;
+@begin Objects
+ "w_export.srw" "libexport.pbl";
+ "getfileopenname.srf" "libexport.pbl";
+ "debug_message.srf" "libexport.pbl";
+ "getfolder.srf" "libexport.pbl";
+ "dw_objects.srd" "libexport.pbl";
+ "libexport.sra" "libexport.pbl";
+ "make_exe.srj" "libexport.pbl";
+@end;

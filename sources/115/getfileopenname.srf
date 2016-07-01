@@ -1,0 +1,21 @@
+HA$PBExportHeader$getfileopenname.srf
+global type getfileopenname from function_object
+end type
+
+forward prototypes
+global function integer getfileopenname (string as_title, ref string as_path, ref string as_filename, string as_ext, string as_filter)
+end prototypes
+
+global function integer getfileopenname (string as_title, ref string as_path, ref string as_filename, string as_ext, string as_filter);
+
+CONSTANT ulong OFN_EXPLORER = 2
+integer li_ret
+string ls_current
+
+ls_current = GetCurrentDirectory()
+li_ret = GetFileOpenName(as_title, as_path, as_filename, as_ext, as_filter, "", OFN_EXPLORER)
+ChangeDirectory(ls_current)
+
+return li_ret
+end function
+
